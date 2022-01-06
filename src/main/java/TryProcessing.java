@@ -14,4 +14,9 @@ public class TryProcessing extends PApplet {
     public void setup() {
         ellipse(400/2, 200/2, 20, 20);
     }
+
+    @Override
+    public void draw() {
+        ellipse(400/2, 200/2, 20, 20);
+    }
 }
