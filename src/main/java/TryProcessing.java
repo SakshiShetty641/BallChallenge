@@ -1,22 +1,27 @@
 import processing.core.PApplet;
 
 public class TryProcessing extends PApplet {
+    public static final int WIDTH = 400;
+    public static final int HEIGHT = 200;
+    public static final int DIAMETER = 20;
+
+
     public static void main(String[] args) {
         PApplet.main("TryProcessing", args);
     }
 
     @Override
     public void settings() {
-        size(400, 200);
+        size(WIDTH, HEIGHT);
     }
 
     @Override
     public void setup() {
-        ellipse(400/2, 200/2, 20, 20);
+        //ellipse(400/2, 200/2, 20, 20);
     }
 
     @Override
     public void draw() {
-        ellipse(400/2, 200/2, 20, 20);
+        ellipse(WIDTH/2, HEIGHT/2, DIAMETER, DIAMETER);
     }
 }
