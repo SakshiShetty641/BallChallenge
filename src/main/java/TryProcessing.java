@@ -4,6 +4,7 @@ public class TryProcessing extends PApplet {
     public static final int WIDTH = 400;
     public static final int HEIGHT = 200;
     public static final int DIAMETER = 20;
+    public int x = 0;
 
 
     public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class TryProcessing extends PApplet {
 
     @Override
     public void draw() {
-        ellipse(WIDTH/2, HEIGHT/2, DIAMETER, DIAMETER);
+        ellipse(x, HEIGHT/2, DIAMETER, DIAMETER);
+        x++;
     }
 }
